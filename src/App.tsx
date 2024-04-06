@@ -1,12 +1,13 @@
-import './App.css'
+import "./App.css";
+import MainPage from "./Pages/MainPage";
+import TopNav from "./components/TopNav";
 
 function App() {
-
   return (
     <>
-      <div>Nami</div>
+      <MainPage />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

@@ -1,3 +1,15 @@
+@import url(https://fonts.googleapis.com/css?family=Encode+Sans+Expanded:100,200,300,regular,500,600,700,800,900);
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+  font-family: "Encode Sans Expanded";
+}
+
+.main-page-container {
+  max-width: 1550px;
+  margin: auto;
+}
+
+
