@@ -1,0 +1,10 @@
+.footer-mobile {
+  position: fixed;
+  bottom: 0;
+  overflow: none;
+}
+
+.plus-icon {
+  position: relative;
+  top: 30px;
+}

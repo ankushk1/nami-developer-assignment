@@ -19,12 +19,11 @@ const TaskCard = ({
   rating,
   details
 }: ITask) => {
-
-  const getButtonJSX = (type: string) => {
+  const getButtonJSX = (type: string): JSX.Element | undefined => {
     switch (type) {
       case "Not Accepted":
         return (
-          <div className="justify-center self-stretch px-2 py-1 text-xs font-medium text-dark-red rounded-3xl bg-neutral-100">
+          <div className="justify-center self-stretch px-1 px-sm-2 py-1 text-xs font-medium text-dark-red rounded-3xl bg-neutral-100">
             Not Accepted
           </div>
         );
@@ -48,8 +47,8 @@ const TaskCard = ({
         );
       case "On-Time":
         return (
-          <div className="justify-center py-1 text-xs font-medium text-white px-2  bg-dark-green rounded-3xl">
-            On - time
+          <div className="justify-center py-1 text-xs font-medium text-white px-1 px-sm-2 bg-dark-green rounded-3xl">
+            On-time
           </div>
         );
       default:
@@ -58,9 +57,9 @@ const TaskCard = ({
   };
 
   return (
-    <div className="col-12 col-md-6 col-lg-6 col-xl-4">
+    <div className="col-12 col-md-5 col-xxl-4">
       <div className="flex flex-col p-2 rounded-xl card-border max-w-[390px]">
-        <div className="flex gap-4 justify-between w-full">
+        <div className="flex gap-3 gap-sm-4 justify-between w-full">
           <div className="flex gap-1 items-center">
             <div className="flex gap-1.5 self-stretch px-1 py-0.5 my-auto text-xs font-semibold whitespace-nowrap rounded bg-neutral-100 ">
               <img src={spoonIcon} alt="icon" className="w-4 aspect-square" />

@@ -27,7 +27,7 @@ const SideNav = () => {
   ];
 
   return (
-    <aside className="d-none d-md-block col">
+    <aside className="d-none d-lg-block col-2">
       <div className="flex flex-col pb-20 font-semibold max-w-[300px]">
         <div className="flex gap-3 px-8 py-3 mt-1.5 border-orange-600 border-solid bg-zinc-100 border-b-[5px]">
           <img src={homeIcon} alt="home" className="w-6 aspect-square" />
